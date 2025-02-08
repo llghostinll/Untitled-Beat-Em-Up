@@ -6,12 +6,15 @@ public class PlayerMovement : MonoBehaviour
     public float movementSpeed = 1.0f;
     public float movementSpeedMultiplier = 1.5f;
     public float dashSpeed = 1.05f;
+    public float runSpeed = 2.0f;
 
     private bool isDashing = false;
     public float dashCooldownDuration = 5.0f;
 
     private Rigidbody2D rb;
     private Vector2 vectorMovement;
+
+    public bool isFacingRight = true;
 
     // Test purpose props
     private SpriteRenderer sprite;
@@ -28,6 +31,7 @@ public class PlayerMovement : MonoBehaviour
     {
         vectorMovement.x = Input.GetAxisRaw("Horizontal");
         vectorMovement.y = Input.GetAxisRaw("Vertical");
+        Flip();
 
         Run();
         StartCoroutine(Dash());
@@ -36,6 +40,7 @@ public class PlayerMovement : MonoBehaviour
     private void FixedUpdate()
     {
         rb.MovePosition(rb.position + vectorMovement * movementSpeed * Time.fixedDeltaTime);
+        
     }
 
     private void Run()
@@ -43,19 +48,18 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.LeftShift))
         {
             sprite.color = Color.yellow;
-            movementSpeed *= 2;
+            movementSpeed *= runSpeed;
         }
 
         if (Input.GetKeyUp(KeyCode.LeftShift))
         {
             sprite.color = Color.white;
-            movementSpeed /= 2;
+            movementSpeed /= runSpeed;
         }
     }
 
     IEnumerator Dash()
     {
-        // When space bar is clicked, give a brief boost of speed
         if(Input.GetKeyDown(KeyCode.Space) && !isDashing)
         {
             movementSpeed *= dashSpeed;
@@ -68,9 +72,6 @@ public class PlayerMovement : MonoBehaviour
             sprite.color = Color.white;
             DashCoolDown();
         }
-
-        // Indicate that dashing is happening through changing the demo players color to blue
-        // Then, create a system that after the player dashed, they have to wait two seconds before using again
     }
 
     private void DashCoolDown()
@@ -80,10 +81,27 @@ public class PlayerMovement : MonoBehaviour
         while (dashCooldownDuration > timer) 
         {
             timer += Time.fixedDeltaTime;
-            Debug.Log(timer);
         }
 
         isDashing = false;
+    }
+
+    private void Flip()
+    {
+        if (vectorMovement.x == -1 && isFacingRight)
+        {
+            isFacingRight = false;
+            transform.Rotate(0, 180, 0);
+            return;
+        }
+
+        if (vectorMovement.x == 1 && !isFacingRight)
+        {
+            isFacingRight = true;
+            transform.Rotate(0, 180, 0);
+            return;
+        }
+
     }
 
 }
