@@ -3,7 +3,10 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 3
-  tags: []
+  tags:
+  - Punch
+  - Enemy
+  - Kick
   layers:
   - Default
   - TransparentFX
@@ -47,14 +50,8 @@ TagManager:
   - name: Level
     uniqueID: 895624437
     locked: 0
-  - name: Enemies
-    uniqueID: 3596369101
-    locked: 0
   - name: Characters
     uniqueID: 634109969
-    locked: 0
-  - name: Objects
-    uniqueID: 2022145663
     locked: 0
   m_RenderingLayers:
   - Default
