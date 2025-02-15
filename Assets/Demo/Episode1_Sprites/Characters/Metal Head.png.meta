@@ -1,0 +1,715 @@
+fileFormatVersion: 2
+guid: 708cfd1f383f63d448bd397d5d08e97b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7372649415417231178
+    second: Metal Head_0
+  - first:
+      213: 3181078347188290826
+    second: Metal Head_1
+  - first:
+      213: 8630885190049003514
+    second: Metal Head_2
+  - first:
+      213: 8156770707219746758
+    second: Metal Head_3
+  - first:
+      213: -7545218970928105862
+    second: Metal Head_4
+  - first:
+      213: 3984192351869409548
+    second: Metal Head_5
+  - first:
+      213: -2441146303763733807
+    second: Metal Head_6
+  - first:
+      213: 5988905250147913084
+    second: Metal Head_7
+  - first:
+      213: 8010593645536752747
+    second: Metal Head_8
+  - first:
+      213: 2690711645569494606
+    second: Metal Head_9
+  - first:
+      213: -3289502817345051105
+    second: Metal Head_10
+  - first:
+      213: -5712498828190842820
+    second: Metal Head_11
+  - first:
+      213: -4324861701791016301
+    second: Metal Head_12
+  - first:
+      213: 3944648136123679530
+    second: Metal Head_13
+  - first:
+      213: -6253283507563307244
+    second: Metal Head_14
+  - first:
+      213: 5250329927713370096
+    second: Metal Head_15
+  - first:
+      213: 990488873525303997
+    second: Metal Head_16
+  - first:
+      213: -8541476068582990782
+    second: Metal Head_17
+  - first:
+      213: -4860282784394972453
+    second: Metal Head_18
+  - first:
+      213: 978776896385924412
+    second: Metal Head_19
+  - first:
+      213: 8262943230582322731
+    second: Metal Head_20
+  - first:
+      213: 6579144280584269314
+    second: Metal Head_21
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Metal Head_0
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 378
+        width: 40
+        height: 56
+      alignment: 9
+      pivot: {x: 0.4, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 203b67294e53eb4418abded503a8a943
+      internalID: 1899198347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Metal Head_1
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 378
+        width: 43
+        height: 55
+      alignment: 9
+      pivot: {x: 0.38, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff584437780437648b8289eae47014e6
+      internalID: -1064240030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Metal Head_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 378
+        width: 47
+        height: 56
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08db51152c26f2640897f3936b8ea7ac
+      internalID: 2090944676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Metal Head_3
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 379
+        width: 52
+        height: 53
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fedea23af7f5d1849985ceaa297f79f3
+      internalID: -363126237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Metal Head_4
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 378
+        width: 44
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45b4dc264694c7e4dbad042c9925ad8c
+      internalID: 1880953184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Metal Head_5
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 315
+        width: 53
+        height: 58
+      alignment: 9
+      pivot: {x: 0.41, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ae413236805a1b48848c6db7405ba59
+      internalID: -852298828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Metal Head_6
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 315
+        width: 62
+        height: 58
+      alignment: 9
+      pivot: {x: 0.32, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53abefd7c7b678f46877095577b0ea7a
+      internalID: 76001492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Metal Head_7
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 315
+        width: 79
+        height: 58
+      alignment: 9
+      pivot: {x: 0.25, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07ba1dcdafae0414d831bece188698b6
+      internalID: 1988274434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Metal Head_8
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 315
+        width: 94
+        height: 58
+      alignment: 9
+      pivot: {x: 0.22, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15f8ae90803d29b40b8d5ac56e6cae13
+      internalID: 1372815691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Metal Head_9
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 250
+        width: 96
+        height: 62
+      alignment: 9
+      pivot: {x: 0.35, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6484c2280613614a808a094342a1c9b
+      internalID: 1062680728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Metal Head_10
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 250
+        width: 112
+        height: 62
+      alignment: 9
+      pivot: {x: 0.27, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b78155c553b20a447af4ad0a02e1952e
+      internalID: 471114177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Metal Head_11
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 250
+        width: 128
+        height: 62
+      alignment: 9
+      pivot: {x: 0.25, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b692a7e75aaf104fafb34c51d7a4ce3
+      internalID: -501960328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Metal Head_12
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 180
+        width: 47
+        height: 56
+      alignment: 9
+      pivot: {x: 0.44, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d40d080f7926954b9caf466c9b0b579
+      internalID: 1947070044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Metal Head_13
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 180
+        width: 73
+        height: 55
+      alignment: 9
+      pivot: {x: 0.23, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e6ea61a79c61104a964b70c9667018f
+      internalID: 805796020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Metal Head_14
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 180
+        width: 41
+        height: 56
+      alignment: 9
+      pivot: {x: 0.35, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7e61c8a562e55e4c94c1fa0ac366be4
+      internalID: -943181759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Metal Head_15
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 180
+        width: 40
+        height: 62
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c71c41cb470586345bf456c9d9cf77f9
+      internalID: 88380820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Metal Head_16
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 108
+        width: 72
+        height: 73
+      alignment: 9
+      pivot: {x: 0.29, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6d53a56fe826c84d965aed2092969fe
+      internalID: -44307065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Metal Head_17
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 108
+        width: 47
+        height: 56
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8385ee3871780a44a91691817c8a3f0b
+      internalID: -54382462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Metal Head_18
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 108
+        width: 40
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f440a610b3e0d20428fd26ca639fbc17
+      internalID: 1356608804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Metal Head_19
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 108
+        width: 72
+        height: 62
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69f7a071e22d041499d784ebe9890ecf
+      internalID: -384556469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Metal Head_20
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 108
+        width: 56
+        height: 64
+      alignment: 9
+      pivot: {x: 0.34, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d523244cf358d745865904666423be1
+      internalID: -1737975506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Metal Head_21
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 7
+        width: 180
+        height: 87
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bf8c1ba719625c4c9c3622e2da7e522
+      internalID: 2061674508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: fe1fde5efbdcdf9429fa9bd84b844d72
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Metal Head_0: 1899198347
+      Metal Head_1: -1064240030
+      Metal Head_10: 471114177
+      Metal Head_11: -501960328
+      Metal Head_12: 1947070044
+      Metal Head_13: 805796020
+      Metal Head_14: -943181759
+      Metal Head_15: 88380820
+      Metal Head_16: -44307065
+      Metal Head_17: -54382462
+      Metal Head_18: 1356608804
+      Metal Head_19: -384556469
+      Metal Head_2: 2090944676
+      Metal Head_20: -1737975506
+      Metal Head_21: 2061674508
+      Metal Head_3: -363126237
+      Metal Head_4: 1880953184
+      Metal Head_5: -852298828
+      Metal Head_6: 76001492
+      Metal Head_7: 1988274434
+      Metal Head_8: 1372815691
+      Metal Head_9: 1062680728
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

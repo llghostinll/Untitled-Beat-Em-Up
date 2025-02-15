@@ -5,19 +5,19 @@ using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.UI;
 
-public class HealhSystem : MonoBehaviour
+public class HealthSystem : MonoBehaviour
 {
     public float currentHealth;
     [SerializeField]
     private float maxHealth = 100.0f;
-    public Slider healthbar;
+    public Slider healthbarUI;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
     {
         currentHealth = maxHealth;
-        healthbar.maxValue = maxHealth;
+        healthbarUI.maxValue = maxHealth;
     }
 
     // Update is called once per frame
@@ -43,13 +43,12 @@ public class HealhSystem : MonoBehaviour
         if (remainingHealth < 0)
         {
             currentHealth = 0;
-            healthbar.value = currentHealth;
+            healthbarUI.value = currentHealth;
             return;
         }
 
         currentHealth = remainingHealth;
-        healthbar.value = currentHealth;
-        Debug.Log(string.Format("Player has {0} remaining", currentHealth));
+        healthbarUI.value = currentHealth;
     }
 
     public void IncreaseHealth(float amount)
@@ -59,12 +58,11 @@ public class HealhSystem : MonoBehaviour
         if (healedHealth > maxHealth)
         {
             currentHealth = maxHealth;
-            healthbar.value = currentHealth;
+            healthbarUI.value = currentHealth;
             return;
         }
 
         currentHealth = healedHealth;
-        healthbar.value = currentHealth;
-        Debug.Log(string.Format("Player has {0} remaining", currentHealth));
+        healthbarUI.value = currentHealth;
     }
 }
