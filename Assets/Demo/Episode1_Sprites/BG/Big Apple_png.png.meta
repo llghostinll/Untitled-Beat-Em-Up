@@ -235,7 +235,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Big Apple_png_0: 9121286396215945036
+      Big Apple_png_1: 9121396332433974551
+      Big Apple_png_2: 3629687016758163516
+      Big Apple_png_3: 4346579768355621348
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
