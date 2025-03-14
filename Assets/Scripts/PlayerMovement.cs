@@ -9,7 +9,7 @@ public class PlayerMovement : MonoBehaviour
     public float runSpeed = 2.0f;
 
     private bool isDashing = false;
-    public float dashCooldownDuration = 5.0f;
+    public float dashCooldown = 0.5f;
 
     private Rigidbody2D rb;
     private Vector2 vectorMovement;
@@ -17,13 +17,13 @@ public class PlayerMovement : MonoBehaviour
     public bool isFacingRight = true;
 
     // Test purpose props
-    private SpriteRenderer sprite;
+    private SpriteRenderer sr;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        sprite = GetComponent<SpriteRenderer>();
+        sr = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -47,13 +47,13 @@ public class PlayerMovement : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.LeftShift))
         {
-            sprite.color = Color.yellow;
+            sr.color = Color.yellow;
             movementSpeed *= runSpeed;
         }
 
         if (Input.GetKeyUp(KeyCode.LeftShift))
         {
-            sprite.color = Color.white;
+            sr.color = Color.white;
             movementSpeed /= runSpeed;
         }
     }
@@ -63,30 +63,30 @@ public class PlayerMovement : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Space) && !isDashing)
         {
             movementSpeed *= dashSpeed;
-            sprite.color = Color.blue;
+            sr.color = Color.blue;
             isDashing = true;
 
-            yield return new WaitForSeconds(0.3f);
+            yield return new WaitForSeconds(dashSpeed);
 
             movementSpeed /= dashSpeed;
-            sprite.color = Color.white;
-            DashCoolDown();
+            sr.color = Color.white;
+            StartCoroutine(DashCooldown());
         }
     }
 
-    private void DashCoolDown()
+    IEnumerator DashCooldown()
     {
-        float timer = 0f;
-
-        while (dashCooldownDuration > timer) 
+        while (isDashing)
         {
-            timer += Time.fixedDeltaTime;
+            sr.color = Color.cyan;
+            yield return new WaitForSeconds(dashCooldown);
+            sr.color = Color.white;
+            isDashing = false;
+            break;
         }
-
-        isDashing = false;
     }
 
-    private void Flip()
+private void Flip()
     {
         if (vectorMovement.x == -1 && isFacingRight)
         {
