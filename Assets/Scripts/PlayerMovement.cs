@@ -16,6 +16,8 @@ public class PlayerMovement : MonoBehaviour
 
     public bool isFacingRight = true;
 
+    Animator animator;
+
     // Test purpose props
     private SpriteRenderer sr;
 
@@ -24,6 +26,7 @@ public class PlayerMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -40,7 +43,10 @@ public class PlayerMovement : MonoBehaviour
     private void FixedUpdate()
     {
         rb.MovePosition(rb.position + vectorMovement * movementSpeed * Time.fixedDeltaTime);
-        
+
+        float xVel = Mathf.Abs(Input.GetAxisRaw("Horizontal")) + Mathf.Abs(Input.GetAxisRaw("Vertical"));
+        animator.SetFloat("xVelocity", xVel);
+
     }
 
     private void Run()
