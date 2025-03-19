@@ -45,21 +45,29 @@ public class PlayerMovement : MonoBehaviour
         rb.MovePosition(rb.position + vectorMovement * movementSpeed * Time.fixedDeltaTime);
 
         float xVel = Mathf.Abs(Input.GetAxisRaw("Horizontal")) + Mathf.Abs(Input.GetAxisRaw("Vertical"));
-        animator.SetFloat("xVelocity", xVel);
-
+        if (xVel > 0)
+        {
+            animator.SetBool("isWalking", true);
+        }
+        else
+        {
+            animator.SetBool("isWalking", false);
+        }
     }
 
     private void Run()
     {
         if (Input.GetKeyDown(KeyCode.LeftShift))
         {
-            sr.color = Color.yellow;
+            //sr.color = Color.yellow;
+            animator.SetBool("isRunning", true);
             movementSpeed *= runSpeed;
         }
 
         if (Input.GetKeyUp(KeyCode.LeftShift))
         {
-            sr.color = Color.white;
+            //sr.color = Color.white;
+            animator.SetBool("isRunning", false);
             movementSpeed /= runSpeed;
         }
     }

@@ -259,6 +259,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hitDurtation: 0.5
   isUsingKick: 0
+  ani: {fileID: 0}
 --- !u!1 &100351147
 GameObject:
   m_ObjectHideFlags: 0
@@ -435,6 +436,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hitDurtation: 0.5
   isUsingKick: 1
+  ani: {fileID: 0}
 --- !u!1 &243700255
 GameObject:
   m_ObjectHideFlags: 0
@@ -1265,6 +1267,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hitDurtation: 0.5
   isUsingKick: 1
+  ani: {fileID: 0}
 --- !u!1 &1001919162
 GameObject:
   m_ObjectHideFlags: 0
@@ -1784,6 +1787,7 @@ GameObject:
   - component: {fileID: 1489917026}
   - component: {fileID: 1489917025}
   - component: {fileID: 1489917027}
+  - component: {fileID: 1489917028}
   m_Layer: 0
   m_Name: PlayerWithAnimation
   m_TagString: Untagged
@@ -1969,11 +1973,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementSpeed: 1
-  movementSpeedMultiplier: 1.5
+  movementSpeedMultiplier: 3
   dashSpeed: 1.05
   runSpeed: 2
   dashCooldown: 0.5
   isFacingRight: 1
+--- !u!114 &1489917028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1489917020}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c53f1d5947c42804f86e701798a00b1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeLimit: 5
 --- !u!1 &1676144214
 GameObject:
   m_ObjectHideFlags: 0
@@ -2169,6 +2186,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hitDurtation: 0.5
   isUsingKick: 0
+  ani: {fileID: 0}
 --- !u!70 &1962810947
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
