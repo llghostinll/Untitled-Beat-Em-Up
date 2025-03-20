@@ -10,6 +10,14 @@ public class CombatV2 : MonoBehaviour
     private float timer = 0f;
     public float timeLimit;
 
+    // Damage
+    public float punchDamage = 10f;
+    public float kickDamage = 5f;
+    public Transform punchAttackPoint;
+    public Transform kickAttackPoint;
+    public float weaponRange = 1f;
+    public LayerMask enemyLayer;
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -21,7 +29,24 @@ public class CombatV2 : MonoBehaviour
     void Update()
     {
         PunchComboIntiate();
+        KickComboIntiate();
     }
+
+    void KickComboIntiate()
+    {
+        if(Input.GetKeyDown(KeyCode.K))
+        {
+            StartCoroutine(KickOne());
+        }
+    }
+
+    IEnumerator KickOne()
+    {
+        _animator.SetBool("isKickOne", true);
+        yield return new WaitForSeconds(0.75f);
+        _animator.SetBool("isKickOne", false);
+    }
+
 
     void PunchComboIntiate()
     {
@@ -67,6 +92,25 @@ public class CombatV2 : MonoBehaviour
             Debug.Log("Punch Combo Over");
             timerActive = false;
         }
+    }
+
+    public void DealPunchDamage()
+    {
+        Collider2D[] enemies = Physics2D.OverlapCircleAll(punchAttackPoint.position, weaponRange, enemyLayer);
+        if (enemies.Length > 0) enemies[0].GetComponent<HealthSystem>().DecereaseHealth(punchDamage);
+    }
+
+    public void DealKickDamage()
+    {
+        Collider2D[] enemies = Physics2D.OverlapCircleAll(kickAttackPoint.position, weaponRange, enemyLayer);
+        if (enemies.Length > 0) enemies[0].GetComponent<HealthSystem>().DecereaseHealth(kickDamage);
+    }
+
+
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(punchAttackPoint.position, weaponRange);
     }
 
 }

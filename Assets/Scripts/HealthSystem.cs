@@ -7,7 +7,7 @@ using UnityEngine.UI;
 
 public class HealthSystem : MonoBehaviour
 {
-    public float currentHealth;
+    private float currentHealth;
     [SerializeField]
     private float maxHealth = 100.0f;
     public Slider healthbarUI;
@@ -23,6 +23,7 @@ public class HealthSystem : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        /*
         if(Input.GetKeyUp(KeyCode.B))
         {
             DecereaseHealth(10);
@@ -34,6 +35,7 @@ public class HealthSystem : MonoBehaviour
             IncreaseHealth(10);
             return;
         }
+        */
     }
 
     public void DecereaseHealth(float damage)
