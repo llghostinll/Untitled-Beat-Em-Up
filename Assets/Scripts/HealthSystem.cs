@@ -46,6 +46,7 @@ public class HealthSystem : MonoBehaviour
         {
             currentHealth = 0;
             healthbarUI.value = currentHealth;
+            Destroy(this.gameObject);
             return;
         }
 
