@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour
     public float runSpeed = 2.0f;
 
     private bool isDashing = false;
+    public float dashDuration = 0.5f;
     public float dashCooldown = 0.5f;
 
     private Rigidbody2D rb;
@@ -77,13 +78,15 @@ public class PlayerMovement : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Space) && !isDashing)
         {
             movementSpeed *= dashSpeed;
-            sr.color = Color.blue;
+            //sr.color = Color.blue;
             isDashing = true;
+            animator.SetBool("isDashing", true);
 
-            yield return new WaitForSeconds(dashSpeed);
+            yield return new WaitForSeconds(dashDuration);
 
             movementSpeed /= dashSpeed;
-            sr.color = Color.white;
+            //sr.color = Color.white;
+            animator.SetBool("isDashing", false);
             StartCoroutine(DashCooldown());
         }
     }
