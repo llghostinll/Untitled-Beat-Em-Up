@@ -16,6 +16,9 @@ public class HealthSystem : MonoBehaviour
     Animator _animator;
     SpriteRenderer _sr;
 
+    public string hitAniParameter;
+    public string deathAniParameter;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
     {
@@ -41,19 +44,19 @@ public class HealthSystem : MonoBehaviour
     IEnumerator HitAnimationChange()
     {
         _sr.color = Color.red;
-        _animator.SetBool("isHit", true);
+        _animator.SetBool(hitAniParameter, true);
         yield return new WaitForSeconds(0.20f);
-        _animator.SetBool("isHit", false);
+        _animator.SetBool(hitAniParameter, false);
         _sr.color = Color.white;
     }
 
     IEnumerator DeathAnimationChange()
     {
-        _animator.SetBool("isDead", true);
+        _animator.SetBool(deathAniParameter, true);
         SelectingObjectComponents();
         yield return new WaitForSeconds(1.5f);
         Destroy(this.gameObject);
-        _animator.SetBool("isDead", false);
+        _animator.SetBool(deathAniParameter, false);
     }
 
     void SelectingObjectComponents()

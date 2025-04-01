@@ -16,4 +16,5 @@ public class FollowPlayer : MonoBehaviour
     {
         transform.position = Vector2.MoveTowards(transform.position, target.transform.position, 3 * Time.deltaTime);        
     }
+
 }
