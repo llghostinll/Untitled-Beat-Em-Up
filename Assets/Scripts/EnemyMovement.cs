@@ -5,34 +5,24 @@ public class EnemyMovement : MonoBehaviour
     public float movementSpeed;
     public bool isMovingRight = true;
 
-    private Rigidbody2D _rb;
-    private Vector2 _vectorMovement;
-    private Vector2 _startingPosition;
+    Rigidbody2D _rb;
+    Animator _animator;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         _rb = GetComponent<Rigidbody2D>();
-        _startingPosition = transform.position;
+        _animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (transform.position.x < 5.0f)
-        {
-            transform.position += new Vector3(movementSpeed * Time.fixedDeltaTime, 0, 0);        
-        } else
-        {
-            transform.position += new Vector3(-movementSpeed * Time.fixedDeltaTime, 0, 0);
-        }
-
+        _rb.MovePosition(_rb.position + new Vector2(movementSpeed, 0) * Time.fixedDeltaTime);
+        // _animator.SetBool("isWalking", true);
+        
     }
 
-    void HandleMovement()
-    {
-        if(transform.position.x > 5.0f && isMovingRight)
-        {
-            transform.position += new Vector3(movementSpeed * Time.fixedDeltaTime, 0, 0);
-        }
-    }
 }
+    
+

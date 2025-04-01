@@ -7,14 +7,15 @@ TagManager:
   - Punch
   - Enemy
   - Kick
+  - BG_Wall
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Enemy
   - Water
   - UI
-  - 
+  - Player
   - 
   - 
   - 

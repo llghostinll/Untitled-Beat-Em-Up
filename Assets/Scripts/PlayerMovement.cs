@@ -9,12 +9,15 @@ public class PlayerMovement : MonoBehaviour
     public float runSpeed = 2.0f;
 
     private bool isDashing = false;
+    public float dashDuration = 0.5f;
     public float dashCooldown = 0.5f;
 
     private Rigidbody2D rb;
     private Vector2 vectorMovement;
 
     public bool isFacingRight = true;
+
+    Animator animator;
 
     // Test purpose props
     private SpriteRenderer sr;
@@ -24,6 +27,7 @@ public class PlayerMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -40,20 +44,31 @@ public class PlayerMovement : MonoBehaviour
     private void FixedUpdate()
     {
         rb.MovePosition(rb.position + vectorMovement * movementSpeed * Time.fixedDeltaTime);
-        
+
+        float xVel = Mathf.Abs(Input.GetAxisRaw("Horizontal")) + Mathf.Abs(Input.GetAxisRaw("Vertical"));
+        if (xVel > 0)
+        {
+            animator.SetBool("isWalking", true);
+        }
+        else
+        {
+            animator.SetBool("isWalking", false);
+        }
     }
 
     private void Run()
     {
         if (Input.GetKeyDown(KeyCode.LeftShift))
         {
-            sr.color = Color.yellow;
+            //sr.color = Color.yellow;
+            animator.SetBool("isRunning", true);
             movementSpeed *= runSpeed;
         }
 
         if (Input.GetKeyUp(KeyCode.LeftShift))
         {
-            sr.color = Color.white;
+            //sr.color = Color.white;
+            animator.SetBool("isRunning", false);
             movementSpeed /= runSpeed;
         }
     }
@@ -63,13 +78,15 @@ public class PlayerMovement : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Space) && !isDashing)
         {
             movementSpeed *= dashSpeed;
-            sr.color = Color.blue;
+            //sr.color = Color.blue;
             isDashing = true;
+            animator.SetBool("isDashing", true);
 
-            yield return new WaitForSeconds(dashSpeed);
+            yield return new WaitForSeconds(dashDuration);
 
             movementSpeed /= dashSpeed;
-            sr.color = Color.white;
+            //sr.color = Color.white;
+            animator.SetBool("isDashing", false);
             StartCoroutine(DashCooldown());
         }
     }
