@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using System.Globalization;
 
 public class CombatV2 : MonoBehaviour
 {
@@ -26,7 +27,15 @@ public class CombatV2 : MonoBehaviour
     }
 
     // Update is called once per frame
+    /*
     void Update()
+    {
+        PunchComboIntiate();
+        KickComboIntiate();
+    }
+    */
+
+    private void FixedUpdate()
     {
         PunchComboIntiate();
         KickComboIntiate();
@@ -42,9 +51,9 @@ public class CombatV2 : MonoBehaviour
 
     IEnumerator KickOne()
     {
-        _animator.SetBool("isKickOne", true);
+        _animator.SetBool("isPunchOne", true);
         yield return new WaitForSeconds(0.75f);
-        _animator.SetBool("isKickOne", false);
+        _animator.SetBool("isPunchOne", false);
     }
 
 
@@ -69,7 +78,7 @@ public class CombatV2 : MonoBehaviour
         _animator.SetBool("isPunchOne", true);
         timerActive = true;
         timer = 0f;
-        yield return new WaitForSeconds(0.75f);
+        yield return new WaitForSeconds(0.5f);
         _animator.SetBool("isPunchOne", false);
     }
 
@@ -97,12 +106,14 @@ public class CombatV2 : MonoBehaviour
     public void DealPunchDamage()
     {
         Collider2D[] enemies = Physics2D.OverlapCircleAll(punchAttackPoint.position, weaponRange, enemyLayer);
+        Debug.Log(enemies[0]);
         if (enemies.Length > 0) enemies[0].GetComponent<HealthSystem>().DecereaseHealth(punchDamage);
     }
 
     public void DealKickDamage()
     {
         Collider2D[] enemies = Physics2D.OverlapCircleAll(kickAttackPoint.position, weaponRange, enemyLayer);
+        Debug.Log(enemies[0]);
         if (enemies.Length > 0) enemies[0].GetComponent<HealthSystem>().DecereaseHealth(kickDamage);
     }
 

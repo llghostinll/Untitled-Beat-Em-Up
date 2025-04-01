@@ -1,0 +1,533 @@
+fileFormatVersion: 2
+guid: bb8d84b2d463d0d429fa6e2aae6c77b9
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -72931949649908600
+    second: cloverIdle_0
+  - first:
+      213: 3371293958175506602
+    second: cloverIdle_1
+  - first:
+      213: -132593446209394316
+    second: cloverIdle_2
+  - first:
+      213: -348512698597891742
+    second: cloverIdle_3
+  - first:
+      213: -7569131344770840655
+    second: cloverIdle_4
+  - first:
+      213: -4840841422678887430
+    second: cloverIdle_5
+  - first:
+      213: 9160342500497328005
+    second: cloverIdle_6
+  - first:
+      213: -3991691064315980418
+    second: cloverIdle_7
+  - first:
+      213: 7466211408689519185
+    second: cloverIdle_8
+  - first:
+      213: -5111504633252603158
+    second: cloverIdle_9
+  - first:
+      213: 1483007566851850945
+    second: cloverIdle_10
+  - first:
+      213: -5519184092734180433
+    second: cloverIdle_11
+  - first:
+      213: 2417338504682882701
+    second: cloverIdle_12
+  - first:
+      213: -5392798891170913349
+    second: cloverIdle_13
+  - first:
+      213: -3661421054299033752
+    second: cloverIdle_14
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: cloverIdle_0
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 149
+        width: 70
+        height: 125
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88c275837c4ecfef0800000000000000
+      internalID: -72931949649908600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloverIdle_1
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 151
+        width: 70
+        height: 124
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa0c87a3efd39ce20800000000000000
+      internalID: 3371293958175506602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloverIdle_2
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 149
+        width: 70
+        height: 123
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 479e42396fee82ef0800000000000000
+      internalID: -132593446209394316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloverIdle_3
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 149
+        width: 70
+        height: 122
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2612c501c85d92bf0800000000000000
+      internalID: -348512698597891742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloverIdle_4
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 149
+        width: 70
+        height: 122
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b7c8a8152b05f690800000000000000
+      internalID: -7569131344770840655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloverIdle_5
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 149
+        width: 70
+        height: 122
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af37a3bbf50e1dcb0800000000000000
+      internalID: -4840841422678887430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloverIdle_6
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 149
+        width: 70
+        height: 122
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5878e0b78f2102f70800000000000000
+      internalID: 9160342500497328005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloverIdle_7
+      rect:
+        serializedVersion: 2
+        x: 716
+        y: 149
+        width: 70
+        height: 122
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e75585a302aaa98c0800000000000000
+      internalID: -3991691064315980418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloverIdle_8
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 70
+        height: 121
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15a58e0f7bf4d9760800000000000000
+      internalID: 7466211408689519185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloverIdle_9
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 0
+        width: 70
+        height: 122
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aea17333e994019b0800000000000000
+      internalID: -5111504633252603158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloverIdle_10
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 0
+        width: 70
+        height: 123
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c2cb655683b49410800000000000000
+      internalID: 1483007566851850945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloverIdle_11
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 0
+        width: 70
+        height: 124
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa3b79e3f4be763b0800000000000000
+      internalID: -5519184092734180433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloverIdle_12
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 0
+        width: 70
+        height: 124
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d864f79ff8c1c8120800000000000000
+      internalID: 2417338504682882701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloverIdle_13
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 0
+        width: 70
+        height: 124
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb323a21bfde825b0800000000000000
+      internalID: -5392798891170913349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloverIdle_14
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 0
+        width: 70
+        height: 124
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86fae5d33f4003dc0800000000000000
+      internalID: -3661421054299033752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 69586a70593d9094da740a3ab42c8b94
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      cloverIdle_0: -72931949649908600
+      cloverIdle_1: 3371293958175506602
+      cloverIdle_10: 1483007566851850945
+      cloverIdle_11: -5519184092734180433
+      cloverIdle_12: 2417338504682882701
+      cloverIdle_13: -5392798891170913349
+      cloverIdle_14: -3661421054299033752
+      cloverIdle_2: -132593446209394316
+      cloverIdle_3: -348512698597891742
+      cloverIdle_4: -7569131344770840655
+      cloverIdle_5: -4840841422678887430
+      cloverIdle_6: 9160342500497328005
+      cloverIdle_7: -3991691064315980418
+      cloverIdle_8: 7466211408689519185
+      cloverIdle_9: -5111504633252603158
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
