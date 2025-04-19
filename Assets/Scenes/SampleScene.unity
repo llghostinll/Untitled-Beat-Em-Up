@@ -1929,7 +1929,7 @@ MonoBehaviour:
   kickDamage: 10
   punchAttackPoint: {fileID: 258242694}
   kickAttackPoint: {fileID: 986888492}
-  weaponRange: 2.5
+  weaponRange: 3
   enemyLayer:
     serializedVersion: 2
     m_Bits: 8
