@@ -6,9 +6,10 @@ public class PlayerAttackRange : MonoBehaviour
     public bool isInAttackRange = false;
     public float weaponRange = 1f;
     public Transform attackPoint;
-    public LayerMask playerLayer;
+    public LayerMask playerLayer; 
+    public float weaponDamage = 1f;
 
-     Animator _animator;
+    Animator _animator;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -24,7 +25,7 @@ public class PlayerAttackRange : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if(isInAttackRange)
+        if (isInAttackRange)
         {
             StartCoroutine(DamageAnimation());
         }
@@ -40,10 +41,10 @@ public class PlayerAttackRange : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
-        { 
-            GetComponent<FollowPlayer>().enabled = false; 
+        {
+            GetComponent<FollowPlayer>().enabled = false;
             isInAttackRange = true;
-        } 
+        }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
@@ -52,29 +53,21 @@ public class PlayerAttackRange : MonoBehaviour
         {
             GetComponent<FollowPlayer>().enabled = true;
             isInAttackRange = false;
-        } 
+        }
     }
 
     public void DealEnemyPunchDamage()
     {
         if (!isInAttackRange) return;
 
-        Collider2D[] enemy = Physics2D.OverlapCircleAll(attackPoint.position, weaponRange, playerLayer);
-        Debug.Log(enemy.Length);
-        
+        Collider2D[] enemies = Physics2D.OverlapCircleAll(attackPoint.position, weaponRange, playerLayer);
+        if (enemies.Length > 0) enemies[0].GetComponent<HealthSystem>().DecereaseHealth(weaponDamage);
+
     }
 
-    /*
-    private void OnDrawGizmosSelected()
-    {
-        Gizmos.color = Color.blue;
+    private void OnDrawGizmos()
+    { 
+        Gizmos.color = Color.magenta;
         Gizmos.DrawWireSphere(attackPoint.position, weaponRange);
     }
-    */
-
-    //private void OnDrawGizmos()
-    //{
-    //    Gizmos.color = Color.magenta;
-    //    Gizmos.DrawWireSphere(attackPoint.position, weaponRange);
-    //}
 }
