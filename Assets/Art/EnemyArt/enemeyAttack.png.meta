@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: 1493a34e195186545a002657cef7fa9c
+guid: 36df3c31ff9a79e42973def40b6a7540
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2991359689083123262
-    second: placeholderBackground_0
+      213: 8839404079410199652
+    second: enemyHitV2_0
+  - first:
+      213: 6401068603638727013
+    second: enemyHitV2_1
+  - first:
+      213: 4532561351461682232
+    second: enemyHitV2_2
+  - first:
+      213: 6765881699221295326
+    second: enemyHitV2_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,13 +135,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: placeholderBackground_0
+      name: enemyHitV2_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1920
-        height: 1280
+        x: 7
+        y: 1
+        width: 114
+        height: 120
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +150,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e36f83fc9c1738920800000000000000
-      internalID: 2991359689083123262
+      spriteID: 46c32635d2fdbaa70800000000000000
+      internalID: 8839404079410199652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemyHitV2_1
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 1
+        width: 114
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 561cace0bf925d850800000000000000
+      internalID: 6401068603638727013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemyHitV2_2
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 1
+        width: 114
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83cb98cd884e6ee30800000000000000
+      internalID: 4532561351461682232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemyHitV2_3
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 1
+        width: 113
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed0d66aee8d35ed50800000000000000
+      internalID: 6765881699221295326
       vertices: []
       indices: 
       edges: []
@@ -161,7 +236,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      placeholderBackground_0: 2991359689083123262
+      enemyHitV2_0: 8839404079410199652
+      enemyHitV2_1: 6401068603638727013
+      enemyHitV2_2: 4532561351461682232
+      enemyHitV2_3: 6765881699221295326
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
