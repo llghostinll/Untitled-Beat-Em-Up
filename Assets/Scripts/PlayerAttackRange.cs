@@ -1,4 +1,5 @@
 using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerAttackRange : MonoBehaviour
@@ -9,6 +10,10 @@ public class PlayerAttackRange : MonoBehaviour
     public LayerMask playerLayer; 
     public float weaponDamage = 1f;
 
+    private bool timerActive = false;
+    private float timer = 0f;
+    public float timeLimit;
+
     Animator _animator;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -18,12 +23,7 @@ public class PlayerAttackRange : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        //DealEnemyPunchDamage();
-    }
-
-    private void FixedUpdate()
+    private void Update()
     {
         if (isInAttackRange)
         {
@@ -34,10 +34,9 @@ public class PlayerAttackRange : MonoBehaviour
     IEnumerator DamageAnimation()
     {
         _animator.SetBool("isEnemyAttack", true);
-        yield return new WaitForSeconds(0.30f);
+        yield return new WaitForSeconds(0.50f);
         _animator.SetBool("isEnemyAttack", false);
     }
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
@@ -70,4 +69,19 @@ public class PlayerAttackRange : MonoBehaviour
         Gizmos.color = Color.magenta;
         Gizmos.DrawWireSphere(attackPoint.position, weaponRange);
     }
+
+    void Timer()
+    {
+        if (!timerActive) return;
+
+        timer += Time.fixedDeltaTime;
+        if (timer >= timeLimit)
+        {
+            Debug.Log("Punch Combo Over");
+            timerActive = false;
+        }
+    }
 }
+
+
+

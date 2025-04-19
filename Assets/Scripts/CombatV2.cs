@@ -35,7 +35,7 @@ public class CombatV2 : MonoBehaviour
     }
     */
 
-    private void FixedUpdate()
+    private void Update()
     {
         //PunchComboIntiate();
         KickComboIntiate();
@@ -52,7 +52,7 @@ public class CombatV2 : MonoBehaviour
     IEnumerator KickOne()
     {
         _animator.SetBool("isPunchOne", true);
-        yield return new WaitForSeconds(0.75f);
+        yield return new WaitForSeconds(0.33f);
         _animator.SetBool("isPunchOne", false);
     }
 
@@ -107,7 +107,11 @@ public class CombatV2 : MonoBehaviour
     {
         Collider2D[] enemies = Physics2D.OverlapCircleAll(punchAttackPoint.position, weaponRange, enemyLayer);
         Debug.Log(enemies[0].tag ?? "None");
-        if (enemies.Length > 0) enemies[0].GetComponent<HealthSystem>().DecereaseHealth(punchDamage);
+        if (enemies.Length > 0)
+        {
+            Debug.Log("Hit Registered");
+            enemies[0].GetComponent<HealthSystem>().DecereaseHealth(punchDamage);
+        }
     }
 
     public void DealKickDamage()

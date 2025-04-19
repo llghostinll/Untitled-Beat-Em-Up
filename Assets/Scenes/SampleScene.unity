@@ -163,10 +163,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 327203717477262208, guid: 6f176e37957e4e548b06e5e83be50734, type: 3}
+      propertyPath: weaponRange
+      value: 1.5
+      objectReference: {fileID: 0}
     - target: {fileID: 2473049395460843911, guid: 6f176e37957e4e548b06e5e83be50734, type: 3}
       propertyPath: healthbarUI
       value: 
       objectReference: {fileID: 779649588}
+    - target: {fileID: 4269182057190399809, guid: 6f176e37957e4e548b06e5e83be50734, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5800215966825133107, guid: 6f176e37957e4e548b06e5e83be50734, type: 3}
       propertyPath: m_LocalPosition.x
       value: 5.64
@@ -211,7 +219,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 7832841855678474282, guid: 6f176e37957e4e548b06e5e83be50734, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: dc80664b26742984a8706801ce5ec6f3, type: 2}
+    m_RemovedComponents:
+    - {fileID: 6047624918840765598, guid: 6f176e37957e4e548b06e5e83be50734, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
