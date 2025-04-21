@@ -34,20 +34,12 @@ public class FollowPlayer : MonoBehaviour
         if (_distFromTarget == -1)
         {
             transform.rotation = Quaternion.Euler(new Vector3(0, 180, 0));
-
-            //Vector2 pointPos = attackPoint.transform.position;
-            //pointPos.x *= -1;
-            //attackPoint.transform.position = pointPos;
             return;
         }
 
         if (_distFromTarget == 1)
         {
             transform.rotation = Quaternion.Euler(new Vector3(0, 0, 0));
-
-            //Vector2 pointPos = attackPoint.transform.position;
-            //pointPos.x *= -1;
-            //attackPoint.transform.position = pointPos;
             return;
         }
      }

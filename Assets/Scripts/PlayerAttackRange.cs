@@ -15,11 +15,13 @@ public class PlayerAttackRange : MonoBehaviour
     public float timeLimit;
 
     Animator _animator;
+    public AudioSource m_CloverOuch;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         _animator = GetComponentInParent<Animator>();
+        m_CloverOuch = GetComponentInParent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -59,8 +61,12 @@ public class PlayerAttackRange : MonoBehaviour
     {
         if (!isInAttackRange) return;
 
-        Collider2D[] enemies = Physics2D.OverlapCircleAll(attackPoint.position, weaponRange, playerLayer);
-        if (enemies.Length > 0) enemies[0].GetComponent<HealthSystem>().DecereaseHealth(weaponDamage);
+        Collider2D enemy = Physics2D.OverlapCircle(attackPoint.position, weaponRange, playerLayer);
+        if (enemy != null) 
+        {
+            m_CloverOuch.Play();
+            enemy.GetComponent<HealthSystem>().DecereaseHealth(weaponDamage);
+        }
 
     }
 
