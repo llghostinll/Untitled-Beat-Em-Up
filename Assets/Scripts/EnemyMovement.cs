@@ -7,14 +7,12 @@ public class EnemyMovement : MonoBehaviour
     public bool isMovingRight = true;
 
     Rigidbody2D _rb;
-    Animator _animator;
     Vector2 _vectorMovement;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         _rb = GetComponent<Rigidbody2D>();
-        _animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
