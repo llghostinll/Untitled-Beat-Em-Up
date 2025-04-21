@@ -8,4 +8,9 @@ public class ChangeScenes : MonoBehaviour
     {
         SceneManager.LoadSceneAsync(sceneNumber);
     }
+
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
 }
