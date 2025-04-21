@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.UI;
 using System.Collections;
-
+using UnityEngine.SceneManagement;
 
 public class HealthSystem : MonoBehaviour
 {
@@ -85,7 +85,13 @@ public class HealthSystem : MonoBehaviour
         StartCoroutine(HitAnimationChange());
 
         if (remainingHealth <= 0)
-        {
+        {   
+            if(transform.CompareTag("Player"))
+            {
+                SceneManager.LoadSceneAsync(3);
+                return;
+            }
+
             healthbarUI.value = 0;
             Destroy(this.gameObject);
             return;
