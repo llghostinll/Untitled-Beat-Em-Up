@@ -21,9 +21,7 @@ public class EnemyMovement : MonoBehaviour
     void FixedUpdate()
     {
         _rb.MovePosition(_rb.position + new Vector2(movementSpeed, 0) * Time.fixedDeltaTime);
-        Flip();
-        // _animator.SetBool("isWalking", true);
-        
+        Flip();        
     }
 
     private void Flip()

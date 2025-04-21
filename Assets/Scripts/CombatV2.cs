@@ -105,12 +105,14 @@ public class CombatV2 : MonoBehaviour
 
     public void DealPunchDamage()
     {
-        Collider2D[] enemies = Physics2D.OverlapCircleAll(punchAttackPoint.position, weaponRange, enemyLayer);
-        Debug.Log(enemies[0].tag ?? "None");
-        if (enemies.Length > 0)
+        Collider2D enemies = Physics2D.OverlapCircle(punchAttackPoint.position, weaponRange, enemyLayer);
+
+        if (enemies != null)
         {
-            Debug.Log("Hit Registered");
-            enemies[0].GetComponent<HealthSystem>().DecereaseHealth(punchDamage);
+            enemies.GetComponent<HealthSystem>().DecereaseHealth(punchDamage);
+        } else
+        {
+            return;
         }
     }
 

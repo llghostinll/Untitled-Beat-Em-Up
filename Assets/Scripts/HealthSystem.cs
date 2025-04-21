@@ -86,12 +86,11 @@ public class HealthSystem : MonoBehaviour
 
         if (remainingHealth <= 0)
         {
-            //StartCoroutine(DeathAnimationChange());
             healthbarUI.value = 0;
             Destroy(this.gameObject);
             return;
         }
-        Debug.Log(string.Format("{0} health remaining", remainingHealth));
+
         currentHealth = remainingHealth;
         healthbarUI.value = currentHealth;
     }
