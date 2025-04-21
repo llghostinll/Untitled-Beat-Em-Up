@@ -19,6 +19,9 @@ public class CombatV2 : MonoBehaviour
     public float weaponRange = 1f;
     public LayerMask enemyLayer;
 
+    public AudioSource m_Punch;
+    public AudioSource m_EnemyOuch;
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -109,6 +112,7 @@ public class CombatV2 : MonoBehaviour
 
         if (enemies != null)
         {
+            m_EnemyOuch.Play();
             enemies.GetComponent<HealthSystem>().DecereaseHealth(punchDamage);
         } else
         {
@@ -128,6 +132,11 @@ public class CombatV2 : MonoBehaviour
     {
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(punchAttackPoint.position, weaponRange);
+    }
+
+    public void PlayPunchSound()
+    {
+        m_Punch.Play();
     }
 
 }
