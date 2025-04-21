@@ -27,20 +27,10 @@ public class CombatV2 : MonoBehaviour
     void Start()
     {
         _animator = GetComponent<Animator>();
+        PlayerPrefs.SetInt("TotalKill", 0);
     }
-
-    // Update is called once per frame
-    /*
-    void Update()
-    {
-        PunchComboIntiate();
-        KickComboIntiate();
-    }
-    */
-
     private void Update()
     {
-        //PunchComboIntiate();
         KickComboIntiate();
     }
 

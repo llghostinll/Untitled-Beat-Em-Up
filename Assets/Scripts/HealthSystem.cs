@@ -1,8 +1,4 @@
-using System;
-using TMPro;
-using UnityEditor.UIElements;
 using UnityEngine;
-using UnityEngine.Rendering;
 using UnityEngine.UI;
 using System.Collections;
 using UnityEngine.SceneManagement;
@@ -93,6 +89,7 @@ public class HealthSystem : MonoBehaviour
             }
 
             healthbarUI.value = 0;
+            PlayerPrefs.SetInt("TotalKill", PlayerPrefs.GetInt("TotalKill")+1);
             Destroy(this.gameObject);
             return;
         }
