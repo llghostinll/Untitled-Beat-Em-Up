@@ -1,11 +1,13 @@
 using System;
 using UnityEngine;
+using System.Collections;
 using UnityEngine.UI;
 
 public class EnemySpawner : MonoBehaviour
 {
     public GameObject enemyPrefab;
     public GameObject enemy;
+    public float spawnDelay;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -16,7 +18,13 @@ public class EnemySpawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (enemy == null) Spawn();
+        if (enemy == null) StartCoroutine(Spawning());
+    }
+
+    IEnumerator Spawning()
+    {
+        Spawn();
+        yield return new WaitForSeconds(spawnDelay);
     }
 
     void Spawn()
