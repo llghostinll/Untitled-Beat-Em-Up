@@ -1,6 +1,5 @@
 using UnityEngine;
 using System.Collections;
-using System.Globalization;
 
 public class CombatV2 : MonoBehaviour
 {
